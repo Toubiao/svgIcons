@@ -41,7 +41,7 @@ public class SwaggerConfig {
      */
     private ApiInfo apiEndpointsInfo() {
         return new ApiInfoBuilder().title("sgvIcons API documentation")
-                .description("Operations pertaining to get files list to display")
+                .description("Operations pertaining to get file list to display")
                 .license("hos6dev")
                 .version("1.0.0")
                 .build();
