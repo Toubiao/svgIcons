@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="col-12" *ngFor="let icon of icons | keyvalue">
+   <h1 class="text-center mb-5 mt-5"> {{icon.key}} </h1>
+    <div class="d-flex flex-wrap">
+      <div class="col-1 p-3" *ngFor="let iconPath of icon.value">
+        <img src="http://hos6dev.xyz/svgIcons/{{iconPath}}" class="img-fluid" alt="Responsive image">
+        <h5 class="text-center"> {{iconPath.toString().replace(icon.key.toString(),'')}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

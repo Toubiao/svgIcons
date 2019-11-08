@@ -7,11 +7,13 @@ logs
 **/.project
 **/.classpath
 **/.settings
-svgIcons-web/npm
-svgIcons-web/node_modules
+
 
 # INTELLIJ
 out/
 
 # JIRA PLUGIN
 atlassian-ide-plugin.xml
+/svgIcons-webs/dist/svgIcons-web/
+/svgIcons-webs/node_modules/
+/svgIcons-webs/node_modules/
