@@ -1,0 +1,17 @@
+# DEFAULT WEBAPPJS GIT IGNORE
+.idea
+target
+logs
+*.iml
+*/target/**
+**/.project
+**/.classpath
+**/.settings
+svgIcons-web/npm
+svgIcons-web/node_modules
+
+# INTELLIJ
+out/
+
+# JIRA PLUGIN
+atlassian-ide-plugin.xml
