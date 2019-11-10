@@ -21,7 +21,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/svgIcons-webs/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/svgIcons-web/dist" />
       <excludeFolder url="file://$MODULE_DIR$/svgIcons-web/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

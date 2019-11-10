@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import xyz.hos6dev.svgIcons.svgIconsApp.dto.IconListDTO;
+import xyz.hos6dev.svgIcons.svgIconsApp.logic.FilesResolver;
 import xyz.hos6dev.svgIcons.svgIconsApp.logic.FilesResolverDev;
 
 import java.util.ArrayList;
@@ -22,10 +23,10 @@ import java.util.List;
 @RequestMapping("/api/v1")
 @Api(tags = {"svgIcons API"})
 public class SvgIconsController {
-    private FilesResolverDev filesResolver;
+    private FilesResolver filesResolver;
 
     @Autowired
-    public SvgIconsController(FilesResolverDev filesResolver) {
+    public SvgIconsController(FilesResolver filesResolver) {
         this.filesResolver = filesResolver;
     }
 
