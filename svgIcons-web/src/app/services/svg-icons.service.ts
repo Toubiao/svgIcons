@@ -2,8 +2,10 @@ import { Injectable } from '@angular/core';
 import {Observable, of} from "rxjs";
 import {HttpClient} from '@angular/common/http';
 import {catchError} from 'rxjs/operators';
+import {IconListDTO} from '../models/iconListDTO';
+import { environment } from '../../environments/environment';
 
-const SVG_ICONS_API = 'http://hos6dev.xyz:8080/api/v1/icons';
+const SVG_ICONS_API = environment.apiUrl.concat('/api/v1/icons');
 @Injectable({
   providedIn: 'root'
 })
@@ -11,8 +13,8 @@ export class SvgIconsService {
 
   constructor(private http: HttpClient) { }
 
-  getIcons(): Observable<any[]> {
-    return this.http.get<any[]>(SVG_ICONS_API).pipe(catchError(this.handleError<any[]>('getSchemas')));
+  getIcons(): Observable<IconListDTO[]> {
+    return this.http.get<IconListDTO[]>(SVG_ICONS_API).pipe(catchError(this.handleError<IconListDTO[]>('getSchemas')));
   }
 
   /**
